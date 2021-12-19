@@ -40,4 +40,4 @@ async def on_ready():
 async def update():
         await client.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching,name=f"over {len(client.guilds)} Servers | m!help"))
 
-client.run("ODk5NzI4NTI2NTExNTkxNDI1.YW2_fA.ApQhQJiGcMsyEPxQz5abgFz1L2k")
+client.run(os.environ["TOKEN"])
